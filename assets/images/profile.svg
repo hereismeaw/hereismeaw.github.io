@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" role="img" aria-labelledby="title desc">
+  <title id="title">Abstract portrait illustration</title>
+  <desc id="desc">A stylized profile portrait with gradient background.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#192b56"/>
+      <stop offset="100%" stop-color="#0b1a37"/>
+    </linearGradient>
+    <radialGradient id="shine" cx="50%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#789bff" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#15294f" stop-opacity="0.0"/>
+    </radialGradient>
+    <linearGradient id="fill" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#6da0ff"/>
+      <stop offset="100%" stop-color="#2f5cc9"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="600" rx="40" fill="url(#bg)"/>
+  <circle cx="300" cy="220" r="140" fill="url(#fill)"/>
+  <circle cx="340" cy="180" r="86" fill="#ffffff" opacity="0.08"/>
+  <path d="M156 520c46-128 132-166 220-166s174 38 220 166H156Z" fill="#122a4e"/>
+  <path d="M210 460c36-70 96-88 150-88s114 18 150 88H210Z" fill="#2955a3"/>
+  <path d="M262 378c0 34-26 62-58 62s-58-28-58-62 26-62 58-62 58 28 58 62Z" fill="#67a0ff" opacity="0.5"/>
+  <path d="M446 378c0 34-26 62-58 62s-58-28-58-62 26-62 58-62 58 28 58 62Z" fill="#5f8fff" opacity="0.6"/>
+  <path d="M280 140c0 28-24 52-52 52s-52-24-52-52 24-52 52-52 52 24 52 52Z" fill="#0f1731" opacity="0.35"/>
+  <path d="M326 330c28 0 50-20 50-44s-22-44-50-44-50 20-50 44 22 44 50 44Z" fill="#234a8f" opacity="0.7"/>
+  <circle cx="250" cy="198" r="18" fill="#ffffff" opacity="0.95"/>
+  <circle cx="340" cy="198" r="18" fill="#ffffff" opacity="0.75"/>
+  <rect x="180" y="260" width="240" height="24" rx="12" fill="#ffffff" opacity="0.08"/>
+  <rect x="180" y="300" width="220" height="20" rx="10" fill="#ffffff" opacity="0.08"/>
+</svg>

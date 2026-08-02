@@ -2,14 +2,15 @@
   color-scheme: dark;
   color: #f3f7ff;
   background: #07111f;
-  font-family: Inter, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-size: 16px;
   line-height: 1.65;
-  --surface: rgba(15, 36, 66, 0.92);
+  --surface: rgba(15, 36, 66, 0.86);
+  --surface-strong: rgba(9, 18, 31, 0.94);
   --border: rgba(255, 255, 255, 0.12);
   --accent: #79a7ff;
   --accent-strong: #4f8cff;
-  --text-muted: #9db0d6;
+  --text-muted: #b3c0e3;
 }
 
 * {
@@ -84,15 +85,7 @@ button:hover, .button:hover {
 
 .site-title {
   margin: 0;
-  font-size: clamp(1.4rem, 2vw, 1.9rem);
-}
-
-.site-label {
-  margin: 0;
-  color: var(--text-muted);
-  letter-spacing: 0.16em;
-  text-transform: uppercase;
-  font-size: 0.85rem;
+  font-size: clamp(1.3rem, 2vw, 1.8rem);
 }
 
 .nav-links {
@@ -119,7 +112,50 @@ button:hover, .button:hover {
   font-size: 1.05rem;
 }
 
-.hero-actions {
+.hero.with-profile {
+  display: grid;
+  grid-template-columns: minmax(0, 1.35fr) minmax(220px, 1fr);
+  gap: 32px;
+  align-items: center;
+}
+
+.hero.with-profile .hero-copy {
+  max-width: 680px;
+}
+
+.profile-card {
+  display: grid;
+  gap: 18px;
+  padding: 28px;
+  border-radius: 28px;
+  background: linear-gradient(180deg, rgba(19, 35, 70, 0.92), rgba(10, 18, 33, 0.96));
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.profile-image {
+  width: 100%;
+  border-radius: 24px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.04);
+  box-shadow: 0 22px 48px rgba(5, 13, 34, 0.28);
+}
+
+.profile-card h2 {
+  margin: 0;
+  font-size: 1.25rem;
+}
+
+.profile-card p {
+  margin: 0;
+  color: #c4d0ef;
+}
+
+.profile-card .details-list {
+  margin: 0;
+  gap: 10px;
+}
+
+.hero .hero-actions {
   margin-top: 26px;
   display: flex;
   flex-wrap: wrap;
@@ -172,12 +208,12 @@ button:hover, .button:hover {
   padding: 0;
   margin: 0;
   display: grid;
-  gap: 12px;
+  gap: 10px;
 }
 
 .details-list li {
-  display: grid;
-  grid-template-columns: 1fr auto;
+  display: flex;
+  justify-content: space-between;
   gap: 12px;
 }
 
@@ -198,6 +234,10 @@ button:hover, .button:hover {
 .timeline-item time {
   color: var(--accent);
   font-weight: 600;
+}
+
+.timeline-item p {
+  margin: 0;
 }
 
 .skills-grid {
@@ -229,5 +269,9 @@ button:hover, .button:hover {
   .site-header {
     flex-direction: column;
     align-items: flex-start;
+  }
+
+  .hero.with-profile {
+    grid-template-columns: 1fr;
   }
 }
