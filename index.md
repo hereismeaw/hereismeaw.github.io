@@ -14,7 +14,7 @@ title: Home
     </div>
   </div>
   <article class="profile-card">
-    <img class="profile-image" src="assets/images/profile.svg" alt="Profile illustration" />
+    <img class="profile-image" src="assets/images/profile.jpg" alt="Profile illustration" />
     <h2>About Kittiwut</h2>
     <p>Engineer and leader creating resilient IoT systems, secure embedded platforms, and operational wireless networks across Asia and beyond.</p>
     <ul class="details-list">

@@ -10,7 +10,7 @@ title: Resume
     <p>IoT systems architect, embedded engineer, and wireless technology specialist.</p>
   </div>
   <article class="profile-card">
-    <img class="profile-image" src="assets/images/profile.svg" alt="Profile illustration" />
+    <img class="profile-image" src="assets/images/profile.jpg" alt="Profile illustration" />
     <h2>Profile snapshot</h2>
     <p>IoT systems architect and chief engineer blending deep embedded expertise with applied AI, wireless networks, and mission-critical systems.</p>
     <ul class="details-list">
