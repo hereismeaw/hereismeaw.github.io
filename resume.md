@@ -30,8 +30,9 @@ title: Resume
   <div class="card">
     <h2>Contact</h2>
     <ul>
-      <li>Email: thisismeaw@proton.me</li>
-      <li>LinkedIn: linkedin.com/in/meaw-k</li>
+      <li>Email: [thisismeaw@proton.me](mailto:thisismeaw@proton.me)</li>
+      <li>Alt Email: [job.kittiwut@gmail.com](mailto:job.kittiwut@gmail.com)</li>
+      <li>LinkedIn: [linkedin.com/in/meaw-k](https://linkedin.com/in/meaw-k)</li>
       <li>Location: Phatthalung, Thailand</li>
     </ul>
   </div>
@@ -53,7 +54,7 @@ title: Resume
   <p>Leading innovation in Mesh LoRaWAN networks for government utilities, state enterprises, and public projects.</p>
 
   <h3>2021 - Present | Southern IoT Co., Ltd.</h3>
-  <p><strong>IoT Systems Architect and Chief Engineer</strong></p>
+  <p><strong>IoT Systems Architect</strong></p>
   <p>Driving IoT, AI, and defense technology initiatives with a focus on decentralized LoRaWAN solutions, secure system design, and new industry standards.</p>
 
   <h3>2024 - Present | Military Projects</h3>
