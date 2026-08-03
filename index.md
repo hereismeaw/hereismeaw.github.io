@@ -10,8 +10,8 @@ title: Home
     <p>Wireless, embedded, and field systems engineering</p>
     <p>8+ years building, installing, and commissioning real systems: private LTE/5G, LoRaWAN, UAV electronics, RF work, and field software across Asia Pacific.</p>
     <div class="actions">
-      <a class="button" href="resume.html">View Resume</a>
-      <a class="button secondary" href="portfolio.html">View Projects</a>
+      <a class="button" href="portfolio.html">View Projects</a>
+      <a class="button secondary" href="resume.html">View Resume</a>
     </div>
   </div>
   <article class="profile-card">
