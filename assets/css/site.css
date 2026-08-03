@@ -48,7 +48,8 @@ img {
   align-items: flex-start;
 }
 
-.card.card-horizontal .card-image-link {
+.card.card-horizontal .card-image-link,
+.card.card-horizontal .card-side {
   flex: 0 0 min(360px, 42%);
   max-width: 42%;
   min-width: 240px;
@@ -57,6 +58,38 @@ img {
 .card.card-horizontal .card-body {
   flex: 1;
   min-width: 260px;
+}
+
+.card.card-horizontal .card-image {
+  margin-bottom: 0;
+  border-radius: 26px;
+}
+
+.card-side {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 220px;
+  border-radius: 26px;
+  overflow: hidden;
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.18);
+  background: linear-gradient(180deg, rgba(92, 102, 41, 0.9), rgba(63, 70, 28, 0.85));
+  color: #f7f5e2;
+  padding: 24px;
+  text-align: center;
+  font-size: 1rem;
+  line-height: 1.4;
+}
+
+.card-side span {
+  display: inline-block;
+  max-width: 100%;
+}
+
+.project-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
 }
 
 .card.card-horizontal .card-image {
