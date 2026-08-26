@@ -1,9 +1,10 @@
 # hereismeaw.github.io
 
-Welcome to my GitHub Pages site.
+GitHub Pages site for Kittiwut Khongkaeo.
 
 - [Home](index.html)
 - [Portfolio](portfolio.html)
 - [Resume](resume.html)
+- [Freelance](services.html)
 
-This site showcases my professional profile, experience, and selected projects in a simple, readable format.
+Field engineering for wireless, embedded, and on-site systems. Open for freelance and project work: thisismeaw@proton.me
