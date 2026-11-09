@@ -3,121 +3,140 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Kittiwut Khongkaeo | Home</title>
+    <title>Kittiwut Khongkaeo · Wireless &amp; Embedded Engineer</title>
+    <meta name="description" content="Kittiwut Khongkaeo — wireless, embedded, and field systems engineer. Private LTE/5G, LoRaWAN, SDR, UAV and TAK systems." />
+    <meta property="og:title" content="Kittiwut Khongkaeo" />
+    <meta property="og:description" content="Wireless, embedded, and field systems engineering." />
+    <meta property="og:image" content="assets/images/profile.jpg" />
+    <meta name="theme-color" content="#07090c" />
+    <script>try{var t=localStorage.getItem("theme");if(t)document.documentElement.setAttribute("data-theme",t)}catch(e){}</script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="assets/css/site.css" />
   </head>
   <body>
-    <main class="container">
-      <header class="site-header">
-        <div>
-          <p class="site-label">Home</p>
-          <h1 class="site-title">Kittiwut Khongkaeo</h1>
-        </div>
-        <nav class="nav-links">
-          <a href="index.html" class="active" aria-current="page">Home</a>
-          <a href="portfolio.html">Portfolio</a>
+    <nav class="nav" aria-label="Main">
+      <div class="nav-inner">
+        <a class="brand" href="index.html"><span class="brand-mark">KK</span><span class="brand-name">Kittiwut Khongkaeo</span></a>
+        <div class="nav-links">
+          <a href="index.html" aria-current="page">Home</a>
+          <a href="portfolio.html">Work</a>
           <a href="resume.html">Resume</a>
-        </nav>
-      </header>
-
-      <section class="hero with-profile">
-        <div class="hero-copy">
-          <p class="site-label">Field engineering &amp; wireless systems</p>
-          <h1>Wireless, embedded, and field systems engineering</h1>
-          <p>
-            8+ years building, installing, and commissioning real systems: private LTE/5G, LoRaWAN,
-            UAV electronics, RF work, and field software across Asia Pacific.
-          </p>
-          <div class="hero-actions">
-            <a class="button" href="portfolio.html">View Projects</a>
-            <a class="button secondary" href="resume.html">View Resume</a>
-          </div>
+          <button class="theme-toggle" type="button" aria-label="Toggle color theme">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+          </button>
         </div>
-        <article class="profile-card">
-          <img class="profile-image" src="assets/images/profile.jpg" alt="Kittiwut Khongkaeo" />
-          <h2>About</h2>
-          <p>
-            Hands-on engineer for IoT, private cellular, and defense hardware. Day-to-day work covers
-            LPWAN gateways, LTE/5G base stations, UAV avionics, TAK software, and RF setup in the field.
-          </p>
-          <ul class="details-list">
-            <li><span>Experience</span><span>8+ years wireless and systems work</span></li>
-            <li><span>Focus</span><span>LTE/5G, LoRaWAN, UAS, EW, edge AI</span></li>
-            <li><span>Style</span><span>Build, test, install, keep it running</span></li>
-          </ul>
-        </article>
-      </section>
+      </div>
+    </nav>
 
-      <section class="section">
-        <div class="grid">
-          <div class="card">
-            <h2>About me</h2>
-            <p>
-              Engineer with aerospace and oilfield shop-floor background. I design, assemble, program, and
-              deploy private LTE/5G sites, LoRaWAN networks, embedded firmware, and tactical gear for farms,
-              factories, city infrastructure, and defense use.
+    <main class="container">
+      <section class="hero">
+        <div class="hero-grid">
+          <div class="reveal">
+            <span class="eyebrow">Field engineering · Phatthalung, TH</span>
+            <h1>Radios, firmware &amp; <span class="grad">systems that ship.</span></h1>
+            <p class="lead">
+              8+ years building, installing, and commissioning real systems: private LTE/5G, LoRaWAN,
+              SDR, UAV electronics, RF work, and field software across Asia Pacific.
             </p>
+            <div class="actions">
+              <a class="btn btn-primary" href="portfolio.html">View work
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+              <a class="btn btn-ghost" href="resume.html">Resume</a>
+              <a class="btn btn-ghost" href="https://github.com/hereismeaw" target="_blank" rel="noreferrer">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2c-3.3.7-4-1.6-4-1.6-.6-1.4-1.4-1.8-1.4-1.8-1.1-.7.1-.7.1-.7 1.2.1 1.9 1.2 1.9 1.2 1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.7-1.6-2.7-.3-5.5-1.3-5.5-5.9 0-1.3.5-2.4 1.2-3.2-.1-.3-.5-1.5.1-3.2 0 0 1-.3 3.3 1.2a11.5 11.5 0 0 1 6 0C17.3 4.7 18.3 5 18.3 5c.6 1.7.2 2.9.1 3.2.8.8 1.2 1.9 1.2 3.2 0 4.6-2.8 5.6-5.5 5.9.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A12 12 0 0 0 12 .5z"/></svg>
+                GitHub</a>
+            </div>
           </div>
-          <div class="card">
-            <h2>What I work with</h2>
-            <ul class="details-list">
-              <li><span>Cellular</span><span>Private LTE/5G base stations and RAN bring-up</span></li>
-              <li><span>LPWAN</span><span>LoRaWAN gateways, mesh, mioty, edge boxes</span></li>
-              <li><span>Embedded</span><span>ESP, STM32, Raspberry Pi, RTOS, firmware</span></li>
-              <li><span>Defense</span><span>UAS, TAK/ATAK, EW, secure radio links</span></li>
-              <li><span>Systems</span><span>RF layout, Linux/FreeBSD, field tooling</span></li>
-            </ul>
+          <figure class="profile reveal">
+            <img src="assets/images/profile.jpg" alt="Kittiwut Khongkaeo" />
+            <figcaption class="profile-tag"><span class="dot-live"></span>Open to IoT, RF &amp; defense-tech collaboration</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <div class="stats reveal">
+        <div class="stat"><b>8+</b><span>years in the field</span></div>
+        <div class="stat"><b>100+</b><span>LoRaWAN gateways deployed</span></div>
+        <div class="stat"><b>25+</b><span>open-source repos</span></div>
+        <div class="stat"><b>B767·A330</b><span>aviation maintenance roots</span></div>
+      </div>
+
+      <section class="section">
+        <div class="section-head reveal">
+          <div>
+            <span class="eyebrow">What I do</span>
+            <h2>From bench prototype to site handover.</h2>
           </div>
+          <p class="muted">Engineer with an aerospace and oilfield shop-floor background. I design, assemble, program, and deploy systems for farms, factories, city infrastructure, and defense use.</p>
+        </div>
+
+        <div class="bento">
+          <article class="card span-3 reveal">
+            <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 20v-8M8.5 8.5a5 5 0 0 1 7 0M5.6 5.6a9 9 0 0 1 12.8 0"/><circle cx="12" cy="11" r="1"/></svg></div>
+            <h3>Private cellular</h3>
+            <p>Private LTE/5G base stations and RAN bring-up for campuses, plants, and secure ops nets.</p>
+          </article>
+          <article class="card span-3 reveal">
+            <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="5" cy="12" r="2"/><circle cx="19" cy="5" r="2"/><circle cx="19" cy="19" r="2"/><path d="M7 11l10-5M7 13l10 5"/></svg></div>
+            <h3>LPWAN &amp; mesh</h3>
+            <p>LoRaWAN gateways and network servers, Meshtastic/MeshCore, mioty, and hardened gateway firmware.</p>
+          </article>
+          <article class="card span-2 reveal">
+            <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="6" y="6" width="12" height="12" rx="2"/><path d="M9 2v4M15 2v4M9 18v4M15 18v4M2 9h4M2 15h4M18 9h4M18 15h4"/></svg></div>
+            <h3>Embedded</h3>
+            <p>ESP32, STM32, Raspberry Pi, RTOS. C/C++ and Rust firmware.</p>
+          </article>
+          <article class="card span-2 reveal">
+            <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M2 12h3l3-8 4 16 3-8h7"/></svg></div>
+            <h3>RF &amp; SDR</h3>
+            <p>RF layout, SDR tooling, spectrum work, jam-resistant links.</p>
+          </article>
+          <article class="card span-2 reveal">
+            <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 2l8 4v6c0 5-3.5 8.5-8 10-4.5-1.5-8-5-8-10V6z"/></svg></div>
+            <h3>Defense tech</h3>
+            <p>UAS, TAK/ATAK servers and COP tools, EW-aware design.</p>
+          </article>
         </div>
       </section>
 
       <section class="section">
-        <div class="card">
-          <h2>Highlights</h2>
-          <ul class="details-list">
-            <li><span>Experience</span><span>8+ years wireless, firmware, and field jobs</span></li>
-            <li><span>Connectivity</span><span>Private cellular, LoRaWAN, RF installs</span></li>
-            <li><span>Defense</span><span>Tactical UAS, ATAK, EW, mission software</span></li>
-            <li><span>Delivery</span><span>Bench prototype through site install and handover</span></li>
-          </ul>
+        <div class="section-head reveal">
+          <div>
+            <span class="eyebrow">Now</span>
+            <h2>Current roles</h2>
+          </div>
+          <a class="btn btn-ghost" href="resume.html">Full resume</a>
         </div>
-      </section>
-
-      <section class="section">
-        <h2>Experience</h2>
         <div class="timeline">
-          <div class="card timeline-item">
-            <time>2021 - Present</time>
-            <h3>IoT Systems Architect &amp; Engineer</h3>
-            <p>Southern IoT Co., Ltd.</p>
-            <p>
-              Build and run IoT and defense-related systems. Own LoRaWAN design, secure device firmware,
-              gateway installs, and technical delivery across Southeast Asia.
-            </p>
-            <ul class="details-list">
-              <li><span>Result</span><span>Working IoT links for farms, environment, and infrastructure</span></li>
-              <li><span>Work</span><span>Architecture, product definition, firmware, and site bring-up</span></li>
-            </ul>
-          </div>
-          <div class="card timeline-item">
-            <time>2024 - Present</time>
-            <h3>Defense Systems Developer</h3>
-            <p>Independent defense programs</p>
-            <p>
-              Design and field tactical platforms: sensors, radios, geospatial tools, and control software
-              for awareness and mission use.
-            </p>
-            <ul class="details-list">
-              <li><span>Focus</span><span>Tactical hardware/software, embedded code, C2 links</span></li>
-              <li><span>Work</span><span>Design, firmware, integration, and operational handoff</span></li>
-            </ul>
-          </div>
+          <article class="card tl-item reveal">
+            <div class="tl-head"><h3>IoT Systems Architect &amp; Engineer</h3><time>2021 — Present</time></div>
+            <p class="tl-org">Southern IoT Co., Ltd.</p>
+            <p>Build and run IoT and defense-related systems. Own LoRaWAN design, secure device firmware, gateway installs, and technical delivery across Southeast Asia.</p>
+          </article>
+          <article class="card tl-item reveal">
+            <div class="tl-head"><h3>Defense Systems Developer</h3><time>2024 — Present</time></div>
+            <p class="tl-org">Independent defense programs</p>
+            <p>Design and field tactical platforms: sensors, radios, geospatial tools, and control software for awareness and mission use.</p>
+          </article>
         </div>
+      </section>
+
+      <section class="cta reveal">
+        <h2>Need a network, a radio, or a system that keeps running?</h2>
+        <a class="btn btn-primary" href="mailto:thisismeaw@proton.me">thisismeaw@proton.me</a>
       </section>
 
       <footer class="footer">
-        <p>Reach out for collaboration at <a href="mailto:thisismeaw@proton.me">thisismeaw@proton.me</a>.</p>
+        <span>© 2026 Kittiwut Khongkaeo</span>
+        <div class="footer-links">
+          <a href="https://github.com/hereismeaw" target="_blank" rel="noreferrer">GitHub</a>
+          <a href="https://linkedin.com/in/meaw-k" target="_blank" rel="noreferrer">LinkedIn</a>
+          <a href="mailto:thisismeaw@proton.me">Email</a>
+        </div>
       </footer>
     </main>
+    <script src="assets/js/site.js" defer></script>
   </body>
 </html>

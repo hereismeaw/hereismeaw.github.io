@@ -3,186 +3,291 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Kittiwut Khongkaeo | Portfolio</title>
+    <title>Work · Kittiwut Khongkaeo</title>
+    <meta name="description" content="Selected field deployments and open-source projects: LoRaWAN, private LTE/5G, SDR, UAV, TAK and climate tech." />
+    <meta name="theme-color" content="#07090c" />
+    <script>try{var t=localStorage.getItem("theme");if(t)document.documentElement.setAttribute("data-theme",t)}catch(e){}</script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="assets/css/site.css" />
   </head>
   <body>
-    <main class="container">
-      <header class="site-header">
-        <div>
-          <p class="site-label">Portfolio</p>
-          <h1 class="site-title">Kittiwut Khongkaeo</h1>
-        </div>
-        <nav class="nav-links">
+    <nav class="nav" aria-label="Main">
+      <div class="nav-inner">
+        <a class="brand" href="index.html"><span class="brand-mark">KK</span><span class="brand-name">Kittiwut Khongkaeo</span></a>
+        <div class="nav-links">
           <a href="index.html">Home</a>
-          <a href="portfolio.html" class="active" aria-current="page">Portfolio</a>
+          <a href="portfolio.html" aria-current="page">Work</a>
           <a href="resume.html">Resume</a>
-        </nav>
-      </header>
+          <button class="theme-toggle" type="button" aria-label="Toggle color theme">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+          </button>
+        </div>
+      </div>
+    </nav>
 
-      <section class="hero compact">
-        <h1>Selected builds and field deployments</h1>
-        <p>
-          Real installs and prototypes across IoT, private LTE/5G, wireless, climate sensing, and defense gear.
-        </p>
+    <main class="container">
+      <section class="hero compact reveal">
+        <span class="eyebrow">Work</span>
+        <h1>Selected builds &amp; <span class="grad">field deployments.</span></h1>
+        <p class="lead">Real installs and prototypes across IoT, private LTE/5G, wireless, climate sensing, and defense gear, plus the open-source code behind them.</p>
+        <div class="actions">
+          <a class="btn btn-ghost" href="#field">Field work</a>
+          <a class="btn btn-ghost" href="#open-source">Open source</a>
+        </div>
       </section>
 
-      <section class="section">
-        <div class="project-grid">
-          <div class="card card-horizontal">
-            <a class="card-image-link" href="assets/images/peoples-network.jpg" target="_blank" rel="noreferrer">
-              <img class="card-image" src="assets/images/peoples-network.jpg" alt="The People's Network gateway deployment" loading="lazy" decoding="async" />
-            </a>
-            <div class="card-body">
-              <h2>The People's Network Project</h2>
-              <p>
-                Build and run a free, decentralized LoRaWAN backbone across Southern Thailand and Northern Malaysia.
-                Gateways, RF planning, and network server setup so sensors can talk without depending on public cellular.
-              </p>
-              <ul class="details-list">
-                <li><span>Scope</span><span>Network layout, multi-site gateway install, RF planning, operator handoff</span></li>
-                <li><span>Impact</span><span>Live coverage for farms, environment sensors, and city IoT nodes</span></li>
-                <li><span>Stack</span><span>LoRaWAN, mesh, edge gateways, open network servers, remote management</span></li>
-              </ul>
-            </div>
+      <section id="field" class="stack-list">
+        <article class="card project reveal">
+          <figure class="project-media" style="margin:0">
+            <a href="assets/images/peoples-network.jpg" target="_blank" rel="noreferrer"><img src="assets/images/peoples-network.jpg" alt="The People's Network gateway deployment" loading="lazy" decoding="async" /></a>
+          </figure>
+          <div class="project-body">
+            <span class="project-index">01 / LoRaWAN</span>
+            <h3>The People's Network Project</h3>
+            <p>Build and run a free, decentralized LoRaWAN backbone across Southern Thailand and Northern Malaysia. Gateways, RF planning, and network server setup so sensors can talk without depending on public cellular.</p>
+            <ul class="kv">
+              <li><span>Scope</span><span>Network layout, multi-site gateway install, RF planning, operator handoff</span></li>
+              <li><span>Impact</span><span>Live coverage for farms, environment sensors, and city IoT nodes</span></li>
+              <li><span>Stack</span><span>LoRaWAN, mesh, edge gateways, open network servers, remote management</span></li>
+            </ul>
           </div>
+        </article>
 
-          <div class="card card-horizontal">
-            <figure class="card-media">
-              <a class="card-image-link" href="assets/images/lte-5g-base-station.jpg" target="_blank" rel="noreferrer">
-                <img class="card-image" src="assets/images/lte-5g-base-station.jpg" alt="LTE/5G private network base station hardware (lab / authorized use)" loading="lazy" decoding="async" />
-              </a>
-              <figcaption class="image-note">
-                Lab / authorized-use hardware only. Licensed private-network or permitted spectrum only; not an offer to transmit without authorization.
-              </figcaption>
-            </figure>
-            <div class="card-body">
-              <h2>LTE / 5G Private Network Base Stations</h2>
-              <p>
-                Assemble, configure, and commission private LTE/5G base stations for plant, campus, and secure sites.
-                Own RF front-end, spectrum plan, RAN/core setup, and on-site bring-up so the cell stands alone from public MNO gear.
-                Work is limited to authorized bands, lab/demo, or licensed private networks under applicable regulation.
-              </p>
-              <ul class="details-list">
-                <li><span>Scope</span><span>Base station bring-up, RF front-end, spectrum plan, core/RAN config, site install</span></li>
-                <li><span>Impact</span><span>On-site private cellular for campuses, plants, and secure ops nets</span></li>
-                <li><span>Stack</span><span>LTE / 5G NR, SDR RAN, multi-band RF, GPS timing, private core, orchestration</span></li>
-              </ul>
-            </div>
+        <article class="card project reveal">
+          <figure class="project-media" style="margin:0">
+            <a href="assets/images/lte-5g-base-station.jpg" target="_blank" rel="noreferrer"><img src="assets/images/lte-5g-base-station.jpg" alt="LTE/5G private network base station hardware (lab / authorized use)" loading="lazy" decoding="async" /></a>
+            <figcaption>Lab / authorized-use hardware only. Licensed private-network or permitted spectrum only.</figcaption>
+          </figure>
+          <div class="project-body">
+            <span class="project-index">02 / Private cellular</span>
+            <h3>LTE / 5G Private Network Base Stations</h3>
+            <p>Assemble, configure, and commission private LTE/5G base stations for plant, campus, and secure sites. Own RF front-end, spectrum plan, RAN/core setup, and on-site bring-up so the cell stands alone from public MNO gear. Work is limited to authorized bands, lab/demo, or licensed private networks under applicable regulation.</p>
+            <ul class="kv">
+              <li><span>Scope</span><span>Base station bring-up, RF front-end, spectrum plan, core/RAN config, site install</span></li>
+              <li><span>Impact</span><span>On-site private cellular for campuses, plants, and secure ops nets</span></li>
+              <li><span>Stack</span><span>LTE / 5G NR, SDR RAN, multi-band RF, GPS timing, private core, orchestration</span></li>
+            </ul>
           </div>
+        </article>
 
-          <div class="card card-horizontal">
-            <a class="card-image-link" href="assets/images/ew.jpg" target="_blank" rel="noreferrer">
-              <img class="card-image" src="assets/images/ew.jpg" alt="Electronic warfare RF spectrum display" loading="lazy" decoding="async" />
-            </a>
-            <div class="card-body">
-              <h2>Electronic Warfare Systems</h2>
-              <p>
-                Design and integrate EW gear for secure links, signal intelligence, and spectrum work in contested RF.
-                Includes jammer avoidance and anti-spoof measures so links and navigation stay usable under attack.
-              </p>
-              <ul class="details-list">
-                <li><span>Scope</span><span>EW design, RF countermeasures, jammer evasion, anti-spoof, tactical fit-out</span></li>
-                <li><span>Impact</span><span>Resilient comms and PNT under jamming and spoofing; clearer spectrum picture</span></li>
-                <li><span>Stack</span><span>RF engineering, SDR, adaptive waveforms, spoof detection, secure signal processing</span></li>
-              </ul>
-            </div>
+        <article class="card project reveal">
+          <figure class="project-media" style="margin:0">
+            <a href="assets/images/ew.jpg" target="_blank" rel="noreferrer"><img src="assets/images/ew.jpg" alt="Electronic warfare RF spectrum display" loading="lazy" decoding="async" /></a>
+          </figure>
+          <div class="project-body">
+            <span class="project-index">03 / Spectrum</span>
+            <h3>Electronic Warfare Systems</h3>
+            <p>Design and integrate EW gear for secure links, signal intelligence, and spectrum work in contested RF. Includes jammer avoidance and anti-spoof measures so links and navigation stay usable under attack.</p>
+            <ul class="kv">
+              <li><span>Scope</span><span>EW design, RF countermeasures, jammer evasion, anti-spoof, tactical fit-out</span></li>
+              <li><span>Impact</span><span>Resilient comms and PNT under jamming and spoofing; clearer spectrum picture</span></li>
+              <li><span>Stack</span><span>RF engineering, SDR, adaptive waveforms, spoof detection, secure signal processing</span></li>
+            </ul>
           </div>
+        </article>
 
-          <div class="card card-horizontal">
-            <a class="card-image-link" href="assets/images/tactical-drone.png" target="_blank" rel="noreferrer">
-              <img class="card-image" src="assets/images/tactical-drone.png" alt="Tactical drone with payload" loading="lazy" decoding="async" />
-            </a>
-            <div class="card-body">
-              <h2>Tactical UAV Systems</h2>
-              <p>
-                Build tactical drones end-to-end: frame fit, flight firmware, radio/video links, and mission payloads
-                ready for field sorties. EW-minded RF design so control and video links hold up under jamming.
-              </p>
-              <ul class="details-list">
-                <li><span>Scope</span><span>Airframe integration, flight firmware, payload mount, jammer-resistant datalinks</span></li>
-                <li><span>Impact</span><span>Working UAS for recon, delivery, and mission support in contested RF</span></li>
-                <li><span>Stack</span><span>Embedded C/C++, flight controllers, EW-hardened RF/video links, sensor fusion, automation</span></li>
-              </ul>
-            </div>
+        <article class="card project reveal">
+          <figure class="project-media" style="margin:0">
+            <a href="assets/images/tactical-drone.png" target="_blank" rel="noreferrer"><img src="assets/images/tactical-drone.png" alt="Tactical drone with payload" loading="lazy" decoding="async" /></a>
+          </figure>
+          <div class="project-body">
+            <span class="project-index">04 / UAS</span>
+            <h3>Tactical UAV Systems</h3>
+            <p>Build tactical drones end-to-end: frame fit, flight firmware, radio/video links, and mission payloads ready for field sorties. EW-minded RF design so control and video links hold up under jamming.</p>
+            <ul class="kv">
+              <li><span>Scope</span><span>Airframe integration, flight firmware, payload mount, jammer-resistant datalinks</span></li>
+              <li><span>Impact</span><span>Working UAS for recon, delivery, and mission support in contested RF</span></li>
+              <li><span>Stack</span><span>Embedded C/C++, flight controllers, EW-hardened RF/video links, sensor fusion, automation</span></li>
+            </ul>
           </div>
+        </article>
 
-          <div class="card card-horizontal">
-            <a class="card-image-link" href="assets/images/drone-targeting.png" target="_blank" rel="noreferrer">
-              <img class="card-image" src="assets/images/drone-targeting.png" alt="AI-guided UAV targeting HUD with day and thermal fusion" loading="lazy" decoding="async" />
-            </a>
-            <div class="card-body">
-              <h2>Homing Module</h2>
-              <p>
-                Build and integrate a UAV homing module: lock stationary or moving aims, hold track through
-                day/night/thermal video, and fly the final approach with less operator load. Designed to keep target
-                lock and guidance useful when the RF link is jammed or EW is heavy.
-              </p>
-              <ul class="details-list">
-                <li><span>Scope</span><span>Autonomous final approach, target track (static/moving), sensor fusion HUD, EW-tolerant guidance</span></li>
-                <li><span>Impact</span><span>Tighter hit geometry, lower pilot workload, mission continue under EW pressure</span></li>
-                <li><span>Stack</span><span>Onboard AI/vision, day + IR fusion, flight-stack hooks, analog/digital video, edge compute</span></li>
-              </ul>
-            </div>
+        <article class="card project reveal">
+          <figure class="project-media" style="margin:0">
+            <a href="assets/images/drone-targeting.png" target="_blank" rel="noreferrer"><img src="assets/images/drone-targeting.png" alt="AI-guided UAV targeting HUD with day and thermal fusion" loading="lazy" decoding="async" /></a>
+          </figure>
+          <div class="project-body">
+            <span class="project-index">05 / Autonomy</span>
+            <h3>Homing Module</h3>
+            <p>Build and integrate a UAV homing module: lock stationary or moving aims, hold track through day/night/thermal video, and fly the final approach with less operator load. Designed to keep target lock and guidance useful when the RF link is jammed or EW is heavy.</p>
+            <ul class="kv">
+              <li><span>Scope</span><span>Autonomous final approach, target track (static/moving), sensor fusion HUD, EW-tolerant guidance</span></li>
+              <li><span>Impact</span><span>Tighter hit geometry, lower pilot workload, mission continue under EW pressure</span></li>
+              <li><span>Stack</span><span>Onboard AI/vision, day + IR fusion, flight-stack hooks, analog/digital video, edge compute</span></li>
+            </ul>
           </div>
+        </article>
 
-          <div class="card card-horizontal">
-            <a class="card-image-link" href="assets/images/atak.jpg" target="_blank" rel="noreferrer">
-              <img class="card-image" src="assets/images/atak.jpg" alt="TAK/ATAK tactical map display" loading="lazy" decoding="async" />
-            </a>
-            <div class="card-body">
-              <h2>TAK / ATAK Systems</h2>
-              <p>
-                Build TAK/ATAK plugins and mission tools: maps, tracking, and encrypted mobile links for field teams.
-                Integrate MANET and LoRaWAN for tactical mesh and long-range sensor/data backhaul where fixed network is thin.
-              </p>
-              <ul class="details-list">
-                <li><span>Scope</span><span>Mission planning, map tracking, MANET/LoRaWAN tactical data paths, encrypted radio integration</span></li>
-                <li><span>Impact</span><span>Faster coordination and clearer shared picture on the ground without relying on public cellular</span></li>
-                <li><span>Stack</span><span>ATAK plugins, Android mapping, MANET, LoRaWAN, secure data links, geospatial telemetry</span></li>
-              </ul>
-            </div>
+        <article class="card project reveal">
+          <figure class="project-media" style="margin:0">
+            <a href="assets/images/atak.jpg" target="_blank" rel="noreferrer"><img src="assets/images/atak.jpg" alt="TAK/ATAK tactical map display" loading="lazy" decoding="async" /></a>
+          </figure>
+          <div class="project-body">
+            <span class="project-index">06 / Situational awareness</span>
+            <h3>TAK / ATAK Systems</h3>
+            <p>Build TAK/ATAK plugins, servers, and mission tools: maps, tracking, and encrypted mobile links for field teams. Integrate MANET and LoRaWAN for tactical mesh and long-range sensor/data backhaul where fixed network is thin.</p>
+            <ul class="kv">
+              <li><span>Scope</span><span>Mission planning, map tracking, MANET/LoRaWAN tactical data paths, encrypted radio integration</span></li>
+              <li><span>Impact</span><span>Faster coordination and clearer shared picture on the ground without relying on public cellular</span></li>
+              <li><span>Stack</span><span>ATAK plugins, TAK server, Cursor on Target, MANET, LoRaWAN, geospatial telemetry</span></li>
+            </ul>
           </div>
+        </article>
 
-          <div class="card card-horizontal">
-            <a class="card-image-link" href="assets/images/co2proj.jpg" target="_blank" rel="noreferrer">
-              <img class="card-image" src="assets/images/co2proj.jpg" alt="CO2 monitoring sensor hardware" loading="lazy" decoding="async" />
-            </a>
-            <div class="card-body">
-              <h2>Carbon Monitoring &amp; Climate Technology</h2>
-              <p>
-                Build trustworthy, Long Range LoRaWAN sensor driven carbon MRV to help climate projects measure, verify, and report carbon
-                outcomes with confidence. Combine field sensing with secure data handling so results are reliable,
-                auditable, and decision-ready pipeline: capture → validate → assure.
-              </p>
-              <ul class="details-list">
-                <li><span>Scope</span><span>Context &amp; baseline, distributed field capture, consistency checks, secure records, reporting &amp; claims</span></li>
-                <li><span>Impact</span><span>Higher data confidence for buyers and auditors; faster MRV cycles; tamper-evident evidence for carbon claims</span></li>
-                <li><span>Stack</span><span>Field sensors, evidence-first MRV workflows, data integrity / audit trails, secure handling</span></li>
-              </ul>
-            </div>
+        <article class="card project reveal">
+          <figure class="project-media" style="margin:0">
+            <a href="assets/images/co2proj.jpg" target="_blank" rel="noreferrer"><img src="assets/images/co2proj.jpg" alt="CO2 monitoring sensor hardware" loading="lazy" decoding="async" /></a>
+          </figure>
+          <div class="project-body">
+            <span class="project-index">07 / Climate</span>
+            <h3>Carbon Monitoring &amp; Climate Technology</h3>
+            <p>Build trustworthy, long-range LoRaWAN sensor-driven carbon MRV to help climate projects measure, verify, and report carbon outcomes with confidence. Pipeline: capture → validate → assure.</p>
+            <ul class="kv">
+              <li><span>Scope</span><span>Baseline, distributed field capture, consistency checks, secure records, reporting &amp; claims</span></li>
+              <li><span>Impact</span><span>Higher data confidence for buyers and auditors; faster MRV cycles; tamper-evident evidence</span></li>
+              <li><span>Stack</span><span>Field sensors, evidence-first MRV workflows, data integrity / audit trails</span></li>
+            </ul>
           </div>
+        </article>
+      </section>
+
+      <section id="open-source" class="section">
+        <div class="section-head reveal">
+          <div>
+            <span class="eyebrow">Open source</span>
+            <h2>Code on GitHub</h2>
+          </div>
+          <a class="btn btn-ghost" href="https://github.com/hereismeaw?tab=repositories" target="_blank" rel="noreferrer">All repositories ↗</a>
+        </div>
+
+        <p class="group-label">LoRaWAN · gateways</p>
+        <div class="bento">
+          <a class="card repo span-2 reveal" href="https://github.com/hereismeaw/sx1302hal_rust" target="_blank" rel="noreferrer">
+            <div class="repo-top"><span class="repo-name">sx1302hal_rust</span><span class="repo-arrow">↗</span></div>
+            <p>Native Rust HAL for Semtech SX1302/SX1303 concentrators.</p>
+            <div class="repo-meta"><span class="lang rust">Rust</span></div>
+          </a>
+          <a class="card repo span-2 reveal" href="https://github.com/hereismeaw/spectre-gateway-os" target="_blank" rel="noreferrer">
+            <div class="repo-top"><span class="repo-name">spectre-gateway-os</span><span class="repo-arrow">↗</span></div>
+            <p>Hardened LoRaWAN gateway firmware: OpenWrt + ChirpStack-compatible + store-and-forward. Mesh LoRaWAN and Wi-Fi HaLow.</p>
+            <div class="repo-meta"><span class="lang c">OpenWrt</span></div>
+          </a>
+          <a class="card repo span-2 reveal" href="https://github.com/hereismeaw/lorawan-analyzer" target="_blank" rel="noreferrer">
+            <div class="repo-top"><span class="repo-name">lorawan-analyzer</span><span class="repo-arrow">↗</span></div>
+            <p>Real-time LoRaWAN traffic analyzer for any gateway on ChirpStack, TTN, or Helium.</p>
+            <div class="repo-meta"><span class="lang ts">TypeScript</span></div>
+          </a>
+          <a class="card repo span-3 reveal" href="https://github.com/hereismeaw/SenseCAPM1-Chirpstack" target="_blank" rel="noreferrer">
+            <div class="repo-top"><span class="repo-name">SenseCAPM1-Chirpstack</span><span class="repo-arrow">↗</span></div>
+            <p>Gives SenseCAP M1 Helium miners a second life as ChirpStack gateways.</p>
+            <div class="repo-meta"><span class="lang sh">Shell</span></div>
+          </a>
+          <a class="card repo span-3 reveal" href="https://github.com/hereismeaw/T1000-E-and--A" target="_blank" rel="noreferrer">
+            <div class="repo-top"><span class="repo-name">T1000-E-and--A</span><span class="repo-arrow">↗</span></div>
+            <p>Firmware and JavaScript payload decoder for SenseCAP T1000 trackers.</p>
+            <div class="repo-meta"><span class="lang js">JavaScript</span></div>
+          </a>
+        </div>
+
+        <p class="group-label">RF · SDR · mesh</p>
+        <div class="bento">
+          <a class="card repo span-3 reveal" href="https://github.com/hereismeaw/Nomad-SDR" target="_blank" rel="noreferrer">
+            <div class="repo-top"><span class="repo-name">Nomad-SDR</span><span class="repo-arrow">↗</span></div>
+            <p>RadioMaster Nomad dual-LR1121 SDR firmware with USB native and Wi-Fi rtl_tcp for SDRangel and SDR++.</p>
+            <div class="repo-meta"><span class="lang py">Python</span><span>★ 2</span></div>
+          </a>
+          <a class="card repo span-3 reveal" href="https://github.com/hereismeaw/Nomad-Meshtastic" target="_blank" rel="noreferrer">
+            <div class="repo-top"><span class="repo-name">Nomad-Meshtastic</span><span class="repo-arrow">↗</span></div>
+            <p>Experimental dual-LR1121 Meshtastic firmware for RadioMaster Nomad.</p>
+            <div class="repo-meta"><span class="lang cpp">C++</span></div>
+          </a>
+        </div>
+
+        <p class="group-label">TAK · C2 · UAS</p>
+        <div class="bento">
+          <a class="card repo span-2 reveal" href="https://github.com/hereismeaw/Spectre-Overwatch" target="_blank" rel="noreferrer">
+            <div class="repo-top"><span class="repo-name">Spectre-Overwatch</span><span class="repo-arrow">↗</span></div>
+            <p>Native Win32 COP for Windows 11: map, 3D terrain, APP-6(E) tracks, Cursor on Target.</p>
+            <div class="repo-meta"><span class="lang rust">Rust</span></div>
+          </a>
+          <a class="card repo span-2 reveal" href="https://github.com/hereismeaw/SpectreTAK" target="_blank" rel="noreferrer">
+            <div class="repo-top"><span class="repo-name">SpectreTAK</span><span class="repo-arrow">↗</span></div>
+            <p>TAK server and web console for TAK clients.</p>
+            <div class="repo-meta"><span class="lang py">Python</span></div>
+          </a>
+          <a class="card repo span-2 reveal" href="https://github.com/hereismeaw/Citadel" target="_blank" rel="noreferrer">
+            <div class="repo-top"><span class="repo-name">Citadel</span><span class="repo-arrow">↗</span></div>
+            <p>Platform with baseline ATAK, WinTAK, and XTAK compatibility.</p>
+            <div class="repo-meta"><span class="lang py">Python</span></div>
+          </a>
+          <a class="card repo span-3 reveal" href="https://github.com/hereismeaw/Spectre-FPV-Ground-Control" target="_blank" rel="noreferrer">
+            <div class="repo-top"><span class="repo-name">Spectre-FPV-Ground-Control</span><span class="repo-arrow">↗</span></div>
+            <p>Ground control software for FPV platforms.</p>
+            <div class="repo-meta"><span class="lang rust">Rust</span></div>
+          </a>
+          <a class="card repo span-3 reveal" href="https://github.com/hereismeaw/batear" target="_blank" rel="noreferrer">
+            <div class="repo-top"><span class="repo-name">batear</span><span class="repo-arrow">↗</span></div>
+            <p>Ultra-low-cost, off-grid acoustic drone detector with edge computing.</p>
+            <div class="repo-meta"><span class="lang c">C</span></div>
+          </a>
+        </div>
+
+        <p class="group-label">Hardware hacks · web</p>
+        <div class="bento">
+          <a class="card repo span-2 reveal" href="https://github.com/hereismeaw/XG_Mobile_Station" target="_blank" rel="noreferrer">
+            <div class="repo-top"><span class="repo-name">XG_Mobile_Station</span><span class="repo-arrow">↗</span></div>
+            <p>Open-source eGPU dock for ROG Ally and ROG Flow.</p>
+            <div class="repo-meta"><span class="lang c">C</span></div>
+          </a>
+          <a class="card repo span-2 reveal" href="https://github.com/hereismeaw/wm1-recovery" target="_blank" rel="noreferrer">
+            <div class="repo-top"><span class="repo-name">wm1-recovery</span><span class="repo-arrow">↗</span></div>
+            <p>Windows recovery tool for Sony Walkmans stuck in a boot loop.</p>
+            <div class="repo-meta"><span class="lang py">Python</span></div>
+          </a>
+          <a class="card repo span-2 reveal" href="https://github.com/hereismeaw/paranormal-map" target="_blank" rel="noreferrer">
+            <div class="repo-top"><span class="repo-name">paranormal-map</span><span class="repo-arrow">↗</span></div>
+            <p>"Every place has a story": a crowd-sourced map of Thai ghost stories.</p>
+            <div class="repo-meta"><span class="lang ts">TypeScript</span></div>
+          </a>
         </div>
       </section>
 
       <section class="section">
-        <div class="card">
-          <h2>How I work</h2>
-          <p>
-            Every build is aimed at real operations, not just the lab. Bench tests are only a step; the real measure
-            is whether the system runs on site, under load, and in the hands of the crew who have to use it every day.
-          </p>
-          <ul class="details-list">
-            <li><span>Design</span><span>Built for field conditions, not demo-only setups</span></li>
-            <li><span>Prove</span><span>Validate on site under real RF, power, and ops constraints</span></li>
-            <li><span>Hand off</span><span>Install, commission, and leave it maintainable for the team</span></li>
-          </ul>
+        <div class="bento">
+          <article class="card span-2 reveal">
+            <span class="project-index">01</span>
+            <h3>Design for the field</h3>
+            <p>Built for real RF, power, and weather, not demo-only setups.</p>
+          </article>
+          <article class="card span-2 reveal">
+            <span class="project-index">02</span>
+            <h3>Prove it on site</h3>
+            <p>Bench tests are a step. The measure is whether it runs on site, under load.</p>
+          </article>
+          <article class="card span-2 reveal">
+            <span class="project-index">03</span>
+            <h3>Hand off clean</h3>
+            <p>Install, commission, and leave it maintainable for the crew who use it daily.</p>
+          </article>
         </div>
+      </section>
+
+      <section class="cta reveal">
+        <h2>Have a deployment in mind?</h2>
+        <a class="btn btn-primary" href="mailto:thisismeaw@proton.me">thisismeaw@proton.me</a>
       </section>
 
       <footer class="footer">
-        <p>Reach out for collaboration at <a href="mailto:thisismeaw@proton.me">thisismeaw@proton.me</a>.</p>
+        <span>© 2026 Kittiwut Khongkaeo</span>
+        <div class="footer-links">
+          <a href="https://github.com/hereismeaw" target="_blank" rel="noreferrer">GitHub</a>
+          <a href="https://linkedin.com/in/meaw-k" target="_blank" rel="noreferrer">LinkedIn</a>
+          <a href="mailto:thisismeaw@proton.me">Email</a>
+        </div>
       </footer>
     </main>
+    <script src="assets/js/site.js" defer></script>
   </body>
 </html>
