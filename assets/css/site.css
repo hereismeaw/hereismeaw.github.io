@@ -548,3 +548,7 @@ time, .date {
 .card p a, .kv a { color: var(--accent); text-decoration: none; border-bottom: 1px solid color-mix(in srgb, var(--accent) 35%, transparent); }
 .chips a { text-decoration: none; color: inherit; }
 .chips li:has(a):hover { border-color: var(--accent); color: var(--accent); }
+.stats.stats-2 { grid-template-columns: 1fr 1fr; }
+.stats.stats-2 .stat { border-bottom: 0; }
+.stats.stats-2 .stat:first-child { border-right: 1px solid var(--border); }
+.repo-top + .repo-meta { margin-top: auto; }
