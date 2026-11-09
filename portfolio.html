@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="assets/css/site.css" />
+    <link rel="stylesheet" href="assets/css/site.css?v=5" />
   </head>
   <body>
     <nav class="nav" aria-label="Main">
@@ -20,6 +20,7 @@
           <a href="index.html">Home</a>
           <a href="portfolio.html" aria-current="page">Work</a>
           <a href="resume.html">Resume</a>
+          <a href="services.html">Freelance</a>
           <button class="theme-toggle" type="button" aria-label="Toggle color theme">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
           </button>
@@ -39,6 +40,23 @@
       </section>
 
       <section id="field" class="stack-list">
+        <article class="card project reveal">
+          <figure class="project-media" style="margin:0">
+            <a href="assets/images/overwatch.png" target="_blank" rel="noreferrer"><img src="assets/images/overwatch.png" alt="Overwatch 3D common operating picture with terrain, contacts, and GeoChat" decoding="async" /></a>
+          </figure>
+          <div class="project-body">
+            <span class="project-index">Featured / Common operating picture</span>
+            <h3>Overwatch</h3>
+            <p>Native Windows 11 common operating picture for small teams: a next-generation battlefield awareness desktop. Live maps, Vulkan 3D terrain, NATO APP-6(E) tracks, GeoChat, video, and encrypted mission folders in one workspace. Runs fully offline from a mission pack; joins the team net over TLS and mesh radios when a link is up.</p>
+            <ul class="kv">
+              <li><span>Scope</span><span>Native COP, 2D/3D terrain, NATO symbology, live tracks, fire-control planning, mesh radios, war-room projector</span></li>
+              <li><span>Impact</span><span>Shared picture on a laptop or projector wall, including fully offline ops</span></li>
+              <li><span>Stack</span><span>Rust, Win32 / Direct2D / Vulkan, NATO APP-6(E), Meshtastic / Meshcore / Reticulum, AES-256-GCM mission packs</span></li>
+            </ul>
+            <ul class="chips" style="margin-top:16px"><li><a href="https://github.com/hereismeaw/Spectre-Overwatch" target="_blank" rel="noreferrer">GitHub ↗</a></li><li><a href="https://spectredynamics.work" target="_blank" rel="noreferrer">spectredynamics.work ↗</a></li></ul>
+          </div>
+        </article>
+
         <article class="card project reveal">
           <figure class="project-media" style="margin:0">
             <a href="assets/images/peoples-network.jpg" target="_blank" rel="noreferrer"><img src="assets/images/peoples-network.jpg" alt="The People's Network gateway deployment" loading="lazy" decoding="async" /></a>
@@ -289,5 +307,6 @@
       </footer>
     </main>
     <script src="assets/js/site.js" defer></script>
+    <!-- Cloudflare Web Analytics --><script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "825c55b2adf44a6ba138a3e7b83cdfe3"}'></script><!-- End Cloudflare Web Analytics -->
   </body>
 </html>

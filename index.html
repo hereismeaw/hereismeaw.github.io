@@ -13,7 +13,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="assets/css/site.css" />
+    <link rel="stylesheet" href="assets/css/site.css?v=5" />
   </head>
   <body>
     <nav class="nav" aria-label="Main">
@@ -23,6 +23,7 @@
           <a href="index.html" aria-current="page">Home</a>
           <a href="portfolio.html">Work</a>
           <a href="resume.html">Resume</a>
+          <a href="services.html">Freelance</a>
           <button class="theme-toggle" type="button" aria-label="Toggle color theme">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
           </button>
@@ -41,8 +42,9 @@
               SDR, UAV electronics, RF work, and field software across Asia Pacific.
             </p>
             <div class="actions">
-              <a class="btn btn-primary" href="portfolio.html">View work
+              <a class="btn btn-primary" href="services.html">Hire for a project
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+              <a class="btn btn-ghost" href="portfolio.html">View work</a>
               <a class="btn btn-ghost" href="resume.html">Resume</a>
               <a class="btn btn-ghost" href="https://github.com/hereismeaw" target="_blank" rel="noreferrer">
                 <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2c-3.3.7-4-1.6-4-1.6-.6-1.4-1.4-1.8-1.4-1.8-1.1-.7.1-.7.1-.7 1.2.1 1.9 1.2 1.9 1.2 1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.7-1.6-2.7-.3-5.5-1.3-5.5-5.9 0-1.3.5-2.4 1.2-3.2-.1-.3-.5-1.5.1-3.2 0 0 1-.3 3.3 1.2a11.5 11.5 0 0 1 6 0C17.3 4.7 18.3 5 18.3 5c.6 1.7.2 2.9.1 3.2.8.8 1.2 1.9 1.2 3.2 0 4.6-2.8 5.6-5.5 5.9.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A12 12 0 0 0 12 .5z"/></svg>
@@ -123,6 +125,35 @@
         </div>
       </section>
 
+      <section class="section">
+        <div class="section-head reveal">
+          <div>
+            <span class="eyebrow">Freelance</span>
+            <h2>Freelance &amp; project work</h2>
+          </div>
+          <p class="muted">Available for scoped field jobs: LoRaWAN networks, firmware bring-up, private LTE/5G commissioning, and live-network rescue. Based in Phatthalung.</p>
+        </div>
+        <div class="bento">
+          <article class="card span-3 reveal">
+            <h3>Typical jobs</h3>
+            <ul class="kv">
+              <li><span>LoRaWAN</span><span>Survey, gateways, network server, device onboarding</span></li>
+              <li><span>Firmware</span><span>STM32 / ESP32, low power, field debug</span></li>
+              <li><span>Private cell</span><span>Authorized or lab LTE/5G site bring-up</span></li>
+              <li><span>Rescue</span><span>Fix coverage, gateways, and unstable live links</span></li>
+            </ul>
+          </article>
+          <article class="card span-3 reveal">
+            <h3>How to start</h3>
+            <p>Send the site, what already exists, and the date it has to work. I reply with scope, exclusions, and a minimum-viable vs full-deployment split.</p>
+            <div class="actions">
+              <a class="btn btn-primary" href="services.html">See services</a>
+              <a class="btn btn-ghost" href="mailto:thisismeaw@proton.me?subject=Project%20inquiry">Email</a>
+            </div>
+          </article>
+        </div>
+      </section>
+
       <section class="cta reveal">
         <h2>Need a network, a radio, or a system that keeps running?</h2>
         <a class="btn btn-primary" href="mailto:thisismeaw@proton.me">thisismeaw@proton.me</a>
@@ -138,5 +169,6 @@
       </footer>
     </main>
     <script src="assets/js/site.js" defer></script>
+    <!-- Cloudflare Web Analytics --><script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "825c55b2adf44a6ba138a3e7b83cdfe3"}'></script><!-- End Cloudflare Web Analytics -->
   </body>
 </html>
